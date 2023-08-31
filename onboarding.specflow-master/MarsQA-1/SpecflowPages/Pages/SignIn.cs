@@ -1,4 +1,5 @@
 ﻿using MarsQA_1.Helpers;
+using MarsQA_1.SpecflowPages.Helpers;
 using OpenQA.Selenium;
 using System.Threading;
 
@@ -10,15 +11,29 @@ namespace MarsQA_1.Pages
         private static IWebElement Email => Driver.driver.FindElement(By.XPath("(//INPUT[@type='text'])[2]"));
         private static IWebElement Password => Driver.driver.FindElement(By.XPath("//INPUT[@type='password']"));
         private static IWebElement LoginBtn => Driver.driver.FindElement(By.XPath("//BUTTON[@class='fluid ui teal button'][text()='Login']"));
+       
         public static void SigninStep()
         {
+            /*{
+                Driver.NavigateUrl();
+                SignInBtn.Click();
+                Email.SendKeys(ExcelLibHelper.ReadData(2,"username"));
+                Password.SendKeys(ExcelLibHelper.ReadData(2, "password"));
+                LoginBtn.Click();
+            }*/
+
+            //JsonReader jr = Program.read();
+            JsonReader jr = JsonReader.read();
+
+
             Driver.NavigateUrl();
             SignInBtn.Click();
-            Email.SendKeys(ExcelLibHelper.ReadData(2,"username"));
-            Password.SendKeys(ExcelLibHelper.ReadData(2, "password"));
+            Email.SendKeys(jr.username);   // Use the username property from the JsonReader
+            Password.SendKeys(jr.password); // Use the password property from the JsonReader
             LoginBtn.Click();
-        }
-        public static void Login()
+        }   
+
+    public static void Login()
         {
             Driver.NavigateUrl();
 

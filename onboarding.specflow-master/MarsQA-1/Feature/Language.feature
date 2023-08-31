@@ -30,7 +30,7 @@ Scenario: Check if user could able to add a language
 Scenario Outline: TC3 Check if the user gets a message to enter all details if missed Field while adding a language
 		Given I clicked on the Language tab under Profile page
 		#When I add a new language by not entering one of the fields <Language> and <Level>  
-			When I add new Languages <Language> and <Level>
+		When I add new Languages <Language> and <Level>
 		Then there should be a pop up Please enter language and level <Expected>
 Examples: 
 

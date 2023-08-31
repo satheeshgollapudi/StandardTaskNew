@@ -79,7 +79,7 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             //Choose the language level
             IWebElement Lang = Driver.driver.FindElement(By.XPath("//select/option[contains(text(),'Basic')]"));
-            LanguageLevel.Click();
+            Lang.Click();
 
 
             //Click on Add button
