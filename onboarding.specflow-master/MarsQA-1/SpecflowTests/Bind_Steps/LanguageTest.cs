@@ -21,7 +21,7 @@ namespace MarsQA_1.SpecflowTests.Bind_Steps
 
 
 
-        [Given(@"I clicked on the Language tab under Profile page")]
+        [Given(@"I clicked on the Education tab under Profile page")]
         public void GivenIClickedOnTheLanguageTabUnderProfilePage()
         {
             //Wait

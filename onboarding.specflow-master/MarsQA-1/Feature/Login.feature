@@ -5,4 +5,6 @@
 
 @mytag
 Scenario: Login to website
-	Given I login to the website
+	Given I enter url
+	When enter credentials
+	Then I login to the website
