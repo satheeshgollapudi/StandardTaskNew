@@ -14,6 +14,6 @@ namespace MarsQA_1.SpecflowPages.Pages
         //line4
         //demo4
         //demo6
-        //line7
+        //demo7
     }
 }
