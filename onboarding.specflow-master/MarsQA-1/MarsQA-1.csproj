@@ -156,6 +156,7 @@
     <Compile Include="SpecflowPages\Helpers\Driver.cs" />
     <Compile Include="SpecflowPages\Helpers\ExcelLibHelper.cs" />
     <Compile Include="SpecflowPages\Helpers\JsonReader.cs" />
+    <Compile Include="SpecflowPages\Pages\Class1.cs" />
     <Compile Include="SpecflowPages\Pages\LanguagePage.cs" />
     <Compile Include="SpecflowPages\Pages\ProfilePage.cs" />
     <Compile Include="SpecflowPages\Pages\SignIn.cs" />
