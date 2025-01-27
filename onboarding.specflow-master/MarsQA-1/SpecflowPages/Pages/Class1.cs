@@ -8,6 +8,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 {
     internal class Class1
     {
+<<<<<<< HEAD
        //line1
+=======
+       //demo1
+>>>>>>> branch2
     }
 }
