@@ -9,6 +9,6 @@ namespace MarsQA_1.SpecflowPages.Pages
     internal class Class1
     {
        //demo1
-
+       //line2
     }
 }
